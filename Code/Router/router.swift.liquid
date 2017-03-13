@@ -8,6 +8,10 @@
 
 import ViperKit
 
-class {{ module_info.name }}Router: {{ module_info.name }}RouterInput {
+class {{ module_info.name }}Router {
   weak var transitionHandler: TransitionHandler!
+}
+
+extension {{ module_info.name }}Router: {{ module_info.name }}RouterInput {
+
 }
