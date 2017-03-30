@@ -20,7 +20,7 @@ extension {{ module_info.name }}Presenter: {{ module_info.name }}ModuleInput {
 // MARK: - View Output
 extension {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput {
   func viewIsReady() {
-    view.setupInitialState()
+    view?.setupInitialState()
   }
 }
 
