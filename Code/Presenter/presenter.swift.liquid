@@ -7,7 +7,7 @@
 //
 
 class {{ module_info.name }}Presenter {
-  weak var view: {{ module_info.name }}ViewInput!
+  weak var view: {{ module_info.name }}ViewInput?
   var interactor: {{ module_info.name }}InteractorInput!
   var router: {{ module_info.name }}RouterInput!
 }
@@ -20,7 +20,7 @@ extension {{ module_info.name }}Presenter: {{ module_info.name }}ModuleInput {
 // MARK: - View Output
 extension {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput {
   func viewIsReady() {
-    view.setupInitialState()
+    view?.setupInitialState()
   }
 }
 
